@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Loïck Perrot | Data Science</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="barre-navigation">
+        <div class="logo">Portfolio<span class="point-accent">.</span></div>
+        <ul class="menu-liens">
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#resume">CV</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="bouton-menu-mobile">
+            <div class="barre-1"></div>
+            <div class="barre-2"></div>
+            <div class="barre-3"></div>
+        </div>
+    </nav>
+
+    <section id="home" class="section-accueil">
+        <div class="contenu-accueil">
+            <h3>Bonjour, je suis</h3>
+           
+            <h1><a href="#about" title="Aller à la section À propos">Loïck Perrot</a></h1>
+           
+            <h2 class="effet-ecriture">Étudiant en BUT Science des Données (VCOD)</h2>
+            <p>Passionné par l'informatique, le rugby et les jeux vidéo. <br>À la recherche d'un master pour 2026/2027.</p>
+            <div class="conteneur-boutons">
+                <a href="#projects" class="bouton-neon">Voir mes projets</a>
+                <a href="#contact" class="bouton-neon bouton-secondaire">Me contacter</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="conteneur-principal marge-section">
+        <div class="titre-section">
+            <h2>À propos de <span class="texte-surligne">Moi</span></h2>
+        </div>
+        <div class="grille-profil">
+            <div class="image-profil">
+                <img src="files/moi.png" alt="Loïck Perrot">
+            </div>
+            <div class="description-profil">
+                <h3>Mon Parcours</h3>
+                <p>J'ai 24 ans et je suis étudiant en 3ème année de <strong>BUT Science des Données</strong> (Parcours VCOD) à l'IUT de Pau. Mon parcours atypique (Licence 1 MIASHS, expériences de terrain) m'a donné une vision pragmatique de la donnée.</p>
+               
+                <h3>Mon Objectif</h3>
+                <p>Allier ma passion pour le <strong>Rugby</strong> et la <strong>Data</strong>. Je souhaite devenir Data Analyst pour un club professionnel (comme la Section Paloise) ou évoluer dans le secteur des jeux vidéo ou bancaire/finance.</p>
+               
+                <div class="bloc-statistiques">
+                    <div>
+                        <span class="chiffre-stat">3+</span>
+                        <span class="libelle-stat">Années d'études</span>
+                    </div>
+                    <div>
+                        <span class="chiffre-stat">6+</span>
+                        <span class="libelle-stat">Projets majeurs</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="marge-section fond-alternatif">
+        <div class="conteneur-principal">
+            <div class="titre-section">
+                <h2>Mes <span class="texte-surligne">Projets</span></h2>
+                <p>Cliquez sur une carte pour voir les détails ou téléchargez le rapport PDF.</p>
+            </div>
+           
+            <div class="grille-projets">
+               
+                <div class="carte-projet" data-id="modal-1">
+                    <div class="icone-projet">
+                        <i class="fa-solid fa-file-excel"></i>
+                    </div>
+                    <div class="info-projet">
+                        <h3>Reporting RH VBA <br>(2ème année)</h3>
+                        <p>Automatisation et UserForm pour la gestion employés.</p>
+                        <div class="boutons-projet">
+                            <span class="texte-details">En savoir plus</span>
+                            <a href="files/projet_vba.pdf" class="bouton-pdf" download target="_blank" title="Télécharger le PDF">
+                                <i class="fa-solid fa-file-pdf"></i> PDF
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carte-projet" data-id="modal-2">
+                    <div class="icone-projet">
+                        <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+                    <div class="info-projet">
+                        <h3>Clustering R<br> (2ème année)</h3>
+                        <p>Analyse de la qualité de l'air et segmentation (K-Means).</p>
+                        <div class="boutons-projet">
+                            <span class="texte-details">En savoir plus</span>
+                            <a href="files/projet_r.pdf" class="bouton-pdf" download target="_blank" title="Télécharger le PDF">
+                                <i class="fa-solid fa-file-pdf"></i> PDF
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carte-projet" data-id="modal-3">
+                    <div class="icone-projet">
+                        <i class="fa-brands fa-twitch"></i>
+                    </div>
+                    <div class="info-projet">
+                        <h3>Analyse Data Twitch <br>(2ème année)</h3>
+                        <p>Interface Python pour l'analyse de performances de streaming.</p>
+                        <div class="boutons-projet">
+                            <span class="texte-details">En savoir plus</span>
+                            <a href="files/projet_twitch.pdf" class="bouton-pdf" download target="_blank" title="Télécharger le PDF">
+                                <i class="fa-solid fa-file-pdf"></i> PDF
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carte-projet" data-id="modal-4">
+                    <div class="icone-projet">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+                    <div class="info-projet">
+                        <h3>App Cook & Save <br>(3ème année)</h3>
+                        <p>Application de gestion de stocks et suivi énergétique pour restaurants.</p>
+                        <div class="boutons-projet">
+                            <span class="texte-details">En savoir plus</span>
+                            <a href="files/projet_cook.pdf" class="bouton-pdf" download target="_blank" title="Télécharger le PDF">
+                                <i class="fa-solid fa-file-pdf"></i> PDF
+                            </a>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="carte-projet" data-id="modal-5">
+                    <div class="icone-projet">
+                        <i class="fa-brands fa-python"></i>
+                    </div>
+                    <div class="info-projet">
+                        <h3>Analyse Nutritionnelle <br>(3ème année)</h3>
+                        <p>App Python (Pandas/Tkinter) pour l'analyse de la base USDA.</p>
+                        <div class="boutons-projet">
+                            <span class="texte-details">En savoir plus</span>
+                            <a href="files/projet_nutri.pdf" class="bouton-pdf" download target="_blank" title="Télécharger le PDF">
+                                <i class="fa-solid fa-file-pdf"></i> PDF
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carte-projet" data-id="modal-6">
+                    <div class="icone-projet">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <div class="info-projet">
+                        <h3>Projet Web <br>(3ème année)</h3>
+                        <p>Site web PHP/SQL interrogeant une base de données.</p>
+                        <div class="boutons-projet">
+                            <span class="texte-details">En savoir plus</span>
+                            <a href="files/projet_web.pdf" class="bouton-pdf" download target="_blank" title="Télécharger le PDF">
+                                <i class="fa-solid fa-file-pdf"></i> PDF
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carte-projet carte-centree" data-id="modal-7">
+                    <div class="icone-projet">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+                    <div class="info-projet">
+                        <h3>Stage</h3>
+                        <p>Création d'un site web interne à l'entreprise interrogeant leur base de données.</p>
+                        <div class="boutons-projet">
+                            <span class="texte-details">En savoir plus</span>
+                            <a href="files/stage.pdf" class="bouton-pdf" download target="_blank" title="Télécharger le PDF">
+                                <i class="fa-solid fa-file-pdf"></i> PDF
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume" class="conteneur-principal marge-section">
+        <div class="titre-section">
+            <h2>Mes <span class="texte-surligne">Compétences</span></h2>
+        </div>
+       
+        <div class="conteneur-cv">
+            <div class="colonne-competences">
+                <div class="bloc-competence">
+                    <div class="nom-competence">Python (Pandas, Numpy, PyTorch)</div>
+                    <div class="barre-fond"><div class="barre-progression" style="width: 70%;"></div></div>
+                </div>
+               
+                <div class="bloc-competence">
+                    <div class="nom-competence">Excel VBA</div>
+                    <div class="barre-fond"><div class="barre-progression" style="width: 60%;"></div></div>
+                </div>
+                <div class="bloc-competence">
+                    <div class="nom-competence">Power BI</div>
+                    <div class="barre-fond"><div class="barre-progression" style="width: 75%;"></div></div>
+                </div>
+                <div class="bloc-competence">
+                    <div class="nom-competence">HTML/CSS/PHP/JS</div>
+                    <div class="barre-fond"><div class="barre-progression" style="width: 85%;"></div></div>
+                </div>
+                <div class="bloc-competence">
+                    <div class="nom-competence">SQL</div>
+                    <div class="barre-fond"><div class="barre-progression" style="width: 80%;"></div></div>
+                </div>
+                <div class="bloc-competence">
+                    <div class="nom-competence">Anglais (Courant)</div>
+                    <div class="barre-fond"><div class="barre-progression" style="width: 85%;"></div></div>
+                </div>
+            </div>
+
+            <div class="colonne-parcours">
+                <h3>Expérience</h3>
+                <div class="etape-parcours">
+                    <div class="date-etape">2025 - 2026</div>
+                    <h4>Alternance data analyst</h4>
+                    <p>AXPLORA - Création de master data et de carte de controle dans un LIMS (logiciel de gestion de laboratoire)</p>
+                </div>
+
+                <div class="etape-parcours">
+                    <div class="date-etape">Avril - Juin 2025 (Stage)</div>
+                    <h4>Développeur App Statistique</h4>
+                    <p>TELERAD - Création site web interne HTML/CSS/JS/PHP/SQL pour analyses statistiques.</p>
+                </div>
+
+                <div class="etape-parcours">
+                    <div class="date-etape">2020 - 2022</div>
+                    <h4>Préparateur de commande (Drive)</h4>
+                    <p>SAS Univerdis - Gestion d'équipe ponctuelle, travail sous pression.</p>
+                </div>
+            </div>
+        </div>
+       
+        <div class="conteneur-telechargement-cv">
+             <a href="files/CV_2026.pdf" target="_blank" class="bouton-neon"><i class="fa-solid fa-download"></i> Télécharger CV</a>
+        </div>
+    </section>
+
+    <section id="contact" class="marge-section fond-alternatif">
+        <div class="conteneur-principal conteneur-contact">
+            <h2>Me Contacter</h2>
+            <p>Je souhaite intégrer un master pour la rentrée 2026.<br> Afin d'éviter les démarchages automatiques, mes coordonnées ne sont pas affichées ici. Vous trouverez toutes les informations nécessaires pour me contacter dans la lettre de motivation jointe à ce portfolio.</p>
+</section>
+
+    <footer>
+        <p>Copyright &copy; 2026 Loïck Perrot | Portfolio</p>
+    </footer>
+
+    <div id="modal-1" class="fenetre-modale">
+        <div class="contenu-modale">
+            <span class="bouton-fermer">&times;</span>
+            <h2>Reporting RH (Excel VBA)</h2>
+            <div class="ligne-separation"></div>
+            <p><strong>Contexte :</strong> Automatisation du reporting de données pour le rendre plus ergonomique via un formulaire Excel (2ème année).</p>
+            <ul>
+                <li>Conception de l'interface UserForm (Zones de texte, boutons).</li>
+                <li>Script VBA pour l'enregistrement automatique dans le tableur.</li>
+                <li>Contrôle de saisie et intégrité des données.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="modal-2" class="fenetre-modale">
+        <div class="contenu-modale">
+            <span class="bouton-fermer">&times;</span>
+            <h2>Clustering & Stats (R)</h2>
+            <div class="ligne-separation"></div>
+            <p><strong>Contexte :</strong> Analyse de données environnementales (NO2) et segmentation.</p>
+            <ul>
+                <li>Datamining non supervisé : Méthode K-Means.</li>
+                <li>Visualisation : Dendrogrammes (Classification Ascendante Hiérarchique) et nuages de points.</li>
+                <li>Interprétation statistique des clusters homogènes.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="modal-3" class="fenetre-modale">
+        <div class="contenu-modale">
+            <span class="bouton-fermer">&times;</span>
+            <h2>Projet Analyse Twitch (Python)</h2>
+            <div class="ligne-separation"></div>
+            <p><strong>Contexte :</strong> Développement d'une application Python avec interface graphique pour analyser les KPIs d'une chaîne Twitch.</p>
+            <ul>
+                <li><strong>Technologies :</strong> Python, <code>tkinter</code> (Interface), <code>pandas</code> (Data), <code>matplotlib</code> (Graphes).</li>
+                <li><strong>Fonctionnalités :</strong> Import et nettoyage automatique des données (gestion des dates et encodages).</li>
+                <li><strong>Analyse :</strong> Calcul dynamique des moyennes et variances sur différentes fréquences.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="modal-4" class="fenetre-modale">
+        <div class="contenu-modale">
+            <span class="bouton-fermer">&times;</span>
+            <h2>Projet Cook & Save</h2>
+            <div class="ligne-separation"></div>
+            <p><strong>Contexte :</strong> Conception d'une application tablette pour une chaîne de restaurants fictive, visant à optimiser la gestion des stocks et la consommation énergétique.</p>
+            <ul>
+                <li><strong>Fonctionnalités :</strong> Suivi des stocks en temps réel et monitoring automatique des appareils (Frigos, Fours) via capteurs pour détecter les pannes.</li>
+                <li><strong>Conception :</strong> Réalisation du cahier des charges, modélisation UML (Cas d'utilisation, Séquence) et maquettage (Wireframes) de l'interface.</li>
+                <li><strong>Interface :</strong> Tableaux de bord pour les gérants (Suivi consommation) et interface simplifiée pour les employés (Entrées/Sorties stocks).</li>
+                <li><strong>Objectif :</strong> Améliorer l'efficacité des restaurants et identifier les sources de gaspillage énergétique.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="modal-5" class="fenetre-modale">
+        <div class="contenu-modale">
+            <span class="bouton-fermer">&times;</span>
+            <h2>Projet Analyse Nutritionnelle (Python)</h2>
+            <div class="ligne-separation"></div>
+            <p><strong>Contexte :</strong> Interface graphique pour explorer la base de données alimentaire USDA au format JSON.</p>
+            <ul>
+                <li><strong>Stack Technique :</strong> Python, <code>Pandas</code>, <code>Tkinter</code>, <code>Json</code>.</li>
+                <li><strong>Fonctionnalités :</strong> Top 20 et Flop 20 des aliments (Calories, Lipides, etc.), classement par groupes.</li>
+                <li><strong>Interface :</strong> Système d'onglets et tableaux interactifs.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="modal-6" class="fenetre-modale">
+        <div class="contenu-modale">
+            <span class="bouton-fermer">&times;</span>
+            <h2>Projet Web Dynamique (PHP/SQL)</h2>
+            <div class="ligne-separation"></div>
+            <p><strong>Contexte :</strong> Développement d'une interface web permettant d'interagir avec une base de données relationnelle.</p>
+            <ul>
+                <li><strong>Front-end :</strong> HTML5 / CSS3 pour la structure et le design.</li>
+                <li><strong>Back-end :</strong> Scripting PHP pour gérer la logique serveur et les requêtes.</li>
+                <li><strong>Base de données :</strong> Conception et interrogation SQL (SELECT, INSERT, UPDATE).</li>
+            </ul>
+        </div>
+    </div>
+    <div id="modal-7" class="fenetre-modale">
+        <div class="contenu-modale">
+            <span class="bouton-fermer">&times;</span>
+            <h2>Stage TELERAD : Développement d'Application Statistique</h2>
+            <div class="ligne-separation"></div>
+            <p><strong>Contexte :</strong> Développement d'un site web intranet pour le service Méthodes & Industrialisation. L'objectif était d'interroger la base de données de production pour générer automatiquement des statistiques d'aide à la décision.</p>
+            <ul>
+                <li><strong>Développement Full Stack :</strong> Conception de l'interface (HTML/CSS/JS) et de la logique serveur (PHP) pour connecter le site à la base de données <code>Controle_process</code>.</li>
+                <li><strong>SQL & Optimisation :</strong> Rédaction et optimisation de requêtes SQL complexes (jointures, filtres dynamiques) pour extraire les données pertinentes.</li>
+                <li><strong>Statistiques Industrielles :</strong> Intégration d'algorithmes en PHP pour calculer les indicateurs de capabilité (Cp, Cpk) et le rendement (FPY).</li>
+                <li><strong>Visualisation de Données :</strong> Utilisation de la librairie <strong>Chart.js</strong> pour créer des graphiques interactifs (Droites de Henry, Courbes de Gauss, Histogrammes).</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="portfolio.js"></script>
+</body>
+</html>
